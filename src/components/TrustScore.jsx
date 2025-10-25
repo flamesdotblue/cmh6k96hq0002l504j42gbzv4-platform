@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2, AlertTriangle, XCircle, Info, ScanSearch } from 'lucide-react';
+import { CheckCircle2, AlertTriangle, XCircle, Info, Search } from 'lucide-react';
 
 function Gauge({ value = 72 }) {
   const clamped = Math.max(0, Math.min(100, value));
@@ -56,7 +56,7 @@ export default function TrustScore() {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative rounded-3xl border border-white/15 bg-white/5 backdrop-blur-xl p-8">
             <div className="flex items-center gap-2 text-cyan-200 text-xs">
-              <ScanSearch className="w-4 h-4" /> Key Innovation
+              <Search className="w-4 h-4" /> Key Innovation
             </div>
             <h2 className="mt-2 text-3xl sm:text-4xl font-bold">Holographic Trust Score</h2>
             <p className="mt-3 text-white/70">0–100 meter with explainable reasoning. Hover to reveal AI insights and risk drivers.</p>

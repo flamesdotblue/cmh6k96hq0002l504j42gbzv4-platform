@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Fingerprint, ScanLine, ArrowRight } from 'lucide-react';
+import { Shield, Fingerprint, Scan, ArrowRight } from 'lucide-react';
 
 function Particles() {
   const canvasRef = useRef(null);
@@ -72,7 +72,7 @@ export default function Hero() {
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a href="#scan" className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 px-5 py-3 text-sm font-semibold shadow-lg shadow-emerald-900/30 border border-white/20 hover:opacity-90">
-                  <ScanLine className="w-4 h-4" /> Scan an App
+                  <Scan className="w-4 h-4" /> Scan an App
                   <ArrowRight className="w-4 h-4 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition" />
                 </a>
                 <a href="#safeapps" className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold border border-white/20 bg-white/10 hover:bg-white/20">

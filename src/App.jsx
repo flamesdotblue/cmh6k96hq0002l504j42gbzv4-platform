@@ -1,5 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { ThemeProvider } from 'next-themes';
+import React, { useEffect, useRef, useState } from 'react';
 import { Sun, Moon, Bot, Send } from 'lucide-react';
 import Hero from './components/Hero';
 import TrustScore from './components/TrustScore';
@@ -29,7 +28,6 @@ function FloatingChatbot() {
     if (!text) return;
     setMessages((m) => [...m, { from: 'user', text }]);
     setInput('');
-    // Simple simulated reasoning demo
     const lower = text.toLowerCase();
     let response = "I couldn't find that app. Please provide more details.";
     if (/(fastcash|quick loan|flash money)/.test(lower)) {
